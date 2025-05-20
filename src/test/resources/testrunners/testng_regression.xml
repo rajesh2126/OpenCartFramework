@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 <suite name="Opencart App Test Regression Suite" verbose="4"
-	thread-count="3" parallel="tests">
+	thread-count="10" parallel="tests">
 	
 	
 	<listeners>
@@ -19,20 +19,20 @@
 		</classes>
 	</test>
 	<!-- <test name="Login Page Test_firefox">
-		<parameter name="browser" value="firefox" />
+		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.qa.opencart.tests.LoginPageTest" />
 		</classes>
 	</test>
 	<test name="Login Page Test_edge">
-		<parameter name="browser" value="edge" />
+		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.qa.opencart.tests.LoginPageTest" />
 		</classes>
-	</test> -->
+	</test>
 
 	<test name="Accounts Page Test_chrome">
-		<parameter name="browser" value="chrome" />
+		<parameter name="browser" value="firefox" />
 
 		<classes>
 			<class name="com.qa.opencart.tests.AccountsPageTest" />
@@ -40,13 +40,13 @@
 	</test>
 	
 	<test name="Search Test_chrome">
-		<parameter name="browser" value="chrome" />
+		<parameter name="browser" value="firefox" />
 
 		<classes>
 			<class name="com.qa.opencart.tests.SearchTest" />
 		</classes>
 	</test>
-	<!-- <test name="Accounts Page Test_firefox">
+	<test name="Accounts Page Test_firefox">
 		<parameter name="browser" value="firefox" />
 
 		<classes>
@@ -75,18 +75,23 @@
 		<classes>
 			<class name="com.qa.opencart.tests.SearchTest" />
 		</classes>
-	</test> -->
+	</test>
 
-	<!-- <test name="ProductInfo Page Test">
-		<parameter name="browser" value="safari" />
+	<test name="ProductInfo Page Test">
+		<parameter name="browser" value="firefox" />
 
 		<classes>
 			<class name="com.qa.opencart.tests.ProductInfoPageTest" />
 		</classes>
-	</test> -->
+	</test>
 
-	<!-- <test name="Register Page Test"> <classes> <class name="com.qa.opencart.tests.RegisterPageTest" 
-		/> </classes> </test> -->
+	<test name="Register Page Test">
+			<parameter name="browser" value="firefox" />
+	
+	<classes>
+		<class name="com.qa.opencart.tests.RegisterPageTest" />
+	</classes>
+</test> -->
 
 
 
